@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>online tutorials</title>
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+
+
+</head>
+<header style="background-color:#f8f8f8">
+    <div class="main" style="width:900px;margin:0 auto;padding:15px;">
+        <div class="logo" class="head">
+            <img src="../assets/logo.jpg" style="width:50px;height:50px;">
+
+            <ul style="margin-top: 10px">
+                <li><a href="../tutorial page.html" class="active">HOME</a></li>
+                <li><a href="../modules/module.html">MODULES</a></li>
+                <li><a href="../quiz/assign.html">QUIZZES</a></li>
+                <li><a href="../example/other.html">EXAMPLES</a>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<body>
+    <div>
+        <div class="boxes">
+            <div class="container">
+                <a id="links" href="module.html">Go Back</a></span>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="content">
+                <div class="cardboard" id="html"><a href="#box-1">HTML FORM</a></div>
+                <div class="cardboard" id="html"><a href="#box-2">INPUT</a></div>
+                <div class="cardboard" id="html"><a href="#box-3">TEXT FIELD</a></div>
+                <div class="cardboard" id="html"><a href="#box-4">LABEL</a></div>
+                <div class="cardboard" id="html"><a href="#box-5">RADIO BUTTON</a></div>
+                <div class="cardboard" id="html"><a href="#box-6">SUBMIT</a></div>
+            </div>
+            <div class="middle">
+                <div class="boxes" id="box-1">
+                    <h3>HTML FORM</h3>
+                    <p> An HTML form is used to collect user input. The user input is most often sent to a server for
+                        processing. <br>
+                        The &ltform&gt Element
+                        The HTML &ltform&gt element is used to create an HTML form for user input: &lt/div&gt.
+                        <br>
+                </div>
+                <div class="boxes" id="box-2">
+                    <h3>The &ltinput&gt Element</h3>
+                    The HTML &ltinput&gt element is the most used form element.
+
+                    An &ltinput&gt element can be displayed in many ways, depending on the type attribute.
+                    Here are some examples: <br> <br>
+                    &ltinput type="text"&gt Displays a single-line text input field <br>
+                    &ltinput type="radio"&gt Displays a radio button (for selecting one of many choices) <br>
+                    &ltinput type="checkbox"&gt Displays a checkbox (for selecting zero or more of many choices) <br>
+                    &ltinput type="submit"&gt Displays a submit button (for submitting the form) <br>
+                    &ltinput type="button"&gt Displays a clickable button <br></p>
+
+                </div>
+
+                <div class="boxes" id="box-3">
+                    <h3>Text Fields</h3> <br>
+                    <p>The &ltinput type="text"&gt defines a single-line input field for text input.</p>
+                    <br>
+                    <h3>CODE SAMPLE</h3><br>
+                    &ltform&gt <br>
+                    &ltlabel for="fname"&gtFirst name:&lt/label&gt<br>
+                    &ltinput type="text" id="fname" name="fname"&gt<br>
+                    &ltlabel for="lname"&gtLast name:&lt/label&gt<br>
+                    &ltinput type="text" id="lname" name="lname"&gt <br>
+                    &lt/form> <br>
+                    <br>
+                    <h3>OUTPUT</h3><br>
+                    <form>
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname"><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname">
+                    </form>
+
+                </div>
+                <div class="boxes" id="box-4">
+                    <h3>The &ltlabel&gt Element</h3> <br>
+                    Notice the use of the &ltlabel&gt element in the example above.
+
+                    The &ltlabel&gt tag defines a label for many form elements.
+
+                    The &ltlabel&gt element is useful for screen-reader users, because the
+                    screen-reader will read out loud the label when the user focus on the input element.
+                    <br>
+                    <h3>CODE SAMPLE</h3> <br>
+                    &ltlabel for="fname"&gtFirst name:&lt/label&gt<br>
+
+                    <br>
+                    <h3>OUTPUT</h3><br>
+                    <label for="fname">First name:</label><br>
+
+                </div>
+
+                <div class="boxes" id="box-5">
+                    <h3>Radio Buttons</h3> <br>
+                    <p>The &ltinput type="radio"&gt defines a radio button.
+
+                        Radio buttons let a user select ONE of a limited number of choices.</p>
+                    <br><br>
+                    <h3>SAMPLE CODE</h3><br>
+                    <p>&ltform&gt<br>
+                        &ltinput type="radio" id="male" name="gender" value="male"&gt
+                        &ltlabel for="male"&gtMale&lt/label><br>
+                        &ltinput type="radio" id="female" name="gender" value="female"&gt<br>
+                        &ltlabel for="female">Female&lt/label&gt<br>
+                        &ltinput type="radio" id="other" name="gender" value="other"&gt<br>
+                        &ltlabel for="other">Other&lt/label&gt<br>
+                        &lt/form&gt><br></p>
+                    <br><br>
+                    <h3>OUTPUT</h3><br>
+                    <form>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label><br>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </form>
+
+                </div>
+                <div class="boxes" id="box-6">
+                    <h3>The Submit Button</h3> <br>
+                    <p>The &ltinput type="submit"&gt defines a button for submitting the form data to a form-handler.
+
+                        The form-handler is typically a file on the server with a script for processing input data.
+
+                        The form-handler is specified in the form's action attribute.</p>
+                    <br>
+                    <h3>CODE SAMPLE</h3><br>
+                    &ltform action="/action_page.php"&gt<br>
+                    &ltlabel for="fname">First name:&lt/label&gt<br>
+                    &ltinput type="text" id="fname" name="fname" value="John"&gt<br>
+                    &ltlabel for="lname">Last name:&lt/label&gt<br>
+                    &ltinput type="text" id="lname" name="lname" value="Doe"&gt<br>
+                    &ltinput type="submit" value="Submit"&gt<br>
+                    &lt/form> <br><br>
+                    <br>
+                    <h3>OUTPUT</h3><br>
+                    <form action="/action_page.php">
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname" value="John"><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="boxes">
+            <div class="container">
+           <span><a id="links" href="module.html">Go Back</a>
+            <a id="links" href="../quiz/assign.html">QUIZ</a></span>
+        </div>
+    </div>
+</body>
+
+</html>

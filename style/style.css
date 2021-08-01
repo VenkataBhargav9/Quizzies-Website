@@ -1,0 +1,107 @@
+*
+{
+    margin:0;
+    
+}
+
+body{
+  font-size: large;
+}
+
+#links
+{
+    padding:5px 10px;
+    background-color: #0080ff;
+    color:white;
+    
+}
+#myHeade {
+    background-color: lightblue;
+    color: black;
+    padding: 40px;
+    text-align: center;
+}
+#links:hover
+{
+    background-color: #66b3ff;
+}
+.container
+{
+    display: flex;
+}
+.middle
+{
+    width:950px;
+ 
+    margin:10px;
+}
+div:nth-child(odd) {
+    background-color: #f8f8f8;
+  }
+  div:nth-child(even) {
+    background-color: #ffffff;
+  }
+  .head
+{
+   
+    padding:25px;
+    margin:10px;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+.content
+{
+    width:320px;
+  
+    text-align: center;
+    margin:10px;
+}
+.cardboard
+{
+    padding:25px;
+    background-color:#f8f8f8;
+    box-shadow:5px 5px 5px rgb(0, 0,0,.1);
+    margin:10px;
+}
+.boxes  
+{
+   padding:40px; 
+   box-shadow:5px 5px 5px rgb(0, 0,0,.1);
+   margin:25px;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+    
+}
+ul{
+    float: right;
+    list-style-type: none;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: green;
+    padding: 5px 20px;
+   
+    transition: 0.6s ease
+}
+
+.main{
+    margin: auto;
+}
+a:hover
+{
+    color:grey;
+}
+.container1{
+
+    width:950px;
+    margin:0 auto;
+    padding:10px;
+}

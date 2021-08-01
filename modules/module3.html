@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>online tutorials</title>
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+
+
+</head>
+<header style="background-color:#f8f8f8">
+    <div class="main" style="width:900px;margin:0 auto;padding:15px;">
+        <div class="logo" class="head">
+            <img src="../assets/logo.jpg" style="width:50px;height:50px;">
+
+            <ul style="margin-top: 10px">
+                <li><a href="../tutorial page.html" class="active">HOME</a></li>
+                <li><a href="../modules/module.html">MODULES</a></li>
+                <li><a href="../quiz/assign.html">QUIZZES</a></li>
+                <li><a href="../example/other.html">EXAMPLES</a>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<body>
+    <div>
+        <div class="boxes">
+            <div class="container">
+                <a id="links" href="module.html">Go Back</a></span>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="content">
+                <div class="cardboard" >
+                  <a href="#box-1">CLASS</a>
+                </div>
+                <div class="cardboard" >
+                    <a href="#box-2">ID</a>
+                  </div>
+                  <div class="cardboard" >
+                    <a href="#box-3">INLINE BLOCK</a>
+                  </div>
+                  <div class="cardboard" >
+                    <a href="#box-4">TABLES</a>
+                  </div>
+            </div>
+            <div class="middle">
+                <div class="boxes" id="box-1">
+
+
+                    <h3> Using The class Attribute</h3> <br>
+                    <p> The class attribute is often used to point to a class name in a style sheet. It can also be used
+                        by a JavaScript to access and manipulate elements with the specific class name.
+
+                        In the following example we have three &ltdiv&gt elements with a class attribute with the value
+                        of "city". All of the three &ltdiv&gt elements
+                        will be styled equally according to the .city style definition in the head section:</p>
+                    <br>
+                    <h4>CODE SAMPLE</h4> <br>
+                    <!DOCTYPE html>
+                    &lthtml&gt <br>
+                    &lthead&gt<br>
+                    &ltstyle&gt<br>
+                    .city {<br>
+                    background-color: tomato;<br>
+                    color: white;<br>
+                    padding: 10px;<br>
+                    }<br>
+                    &lt/style&gt<br>
+                    &lt/head&gt <br>
+                    &ltbody&gt<br>
+
+                    &lth2 class="city"&gtLondon&lt/h2&gt<br>
+                    &ltp&gtLondon is the capital of England.&lt/p&gt<br>
+
+                    &lth2 class="city"&gtParis&lt/h2&gt<br>
+                    &ltp&gtParis is the capital of France.&lt/p&gt
+
+                    &lth2 class="city"&gtTokyo&lt/h2&gt<br>
+                    &ltp&gtTokyo is the capital of Japan.&lt/p&gt
+
+                    &lt/body&gt<br>
+                    &lt/html&gt<br>
+
+                    <br>
+                    <h4>OUTPUT</h4>
+                    <br>
+                    <!DOCTYPE html>
+                    <html>
+
+                    <head>
+                        <style>
+                            .city {
+                                background-color: tomato;
+                                color: white;
+                                padding: 10px;
+                            }
+                        </style>
+                    </head>
+
+                    <body>
+
+                        <h2 class="city">London</h2>
+                        <p>London is the capital of England.</p>
+
+                        <h2 class="city">Paris</h2>
+                        <p>Paris is the capital of France.</p>
+
+                        <h2 class="city">Tokyo</h2>
+                        <p>Tokyo is the capital of Japan.</p>
+
+                    </body>
+
+                    </html> <br>
+                </div>
+
+                <div class="boxes" id="box-2">
+                    <h3>Using The id Attribute</h3> <br>
+                    <p>The id attribute specifies a unique id for an HTML element. The value of the id attribute must be
+                        unique within the HTML document.
+
+                        The id attribute is used to point to a specific style declaration in a style sheet. It is also
+                        used by
+                        JavaScript to access and manipulate the element with the specific id.</p>
+                    <br>
+                    <h4>CODE SAMPLE</h4> <br>
+                    <br>
+                    &lt!DOCTYPE html&gt <br>
+                    &lthtml&gt <br>
+                    &lthead&gt <br>
+                    &ltstyle&gt <br>
+                    #myHeader {
+                    background-color: lightblue;
+                    color: black;
+                    padding: 40px;
+                    text-align: center;
+                    }
+                    &lt/style&gt <br>
+                    &lt/head&gt <br>
+                    &ltbody&gt <br>
+
+                    &lth1 id="myHeader"&gt <br>My Header&lt/h1&gt <br>
+
+                    &lt/body&gt <br>
+                    &lt/html&gt <br>
+                    <br>
+                    <h4>OUTPUT</h4> <br>
+
+                    <h1 id="myHeade">
+                        My Header</h1>
+
+                </div>
+                <div class="boxes" id="box-3">
+                    <h3>HTML Block and Inline Elements</h3><br>
+                    <p>Every HTML element has a default display value, depending on what type of element it is.
+                        There are two display values: block and inline.
+                        A block-level element always starts on a new line and takes up the full width available
+                        (stretches out to the left and right as far as it can).The &ltdiv&gt element is a block-level
+                        element.
+                        An inline element does not start on a new line and it only takes up as much width as necessary.
+                        This is a &ltspan&gt element inside a paragraph.</p>
+                </div>
+                <div class="boxes" id="box-4">
+                    <h3>Define an HTML Table</h3><br>
+                    <p> The &lttable&gt tag defines an HTML table.
+
+                        Each table row is defined with a &lttr&gt tag. Each table header is defined with a &ltth&gt tag.
+                        Each table data/cell is defined with a &lttd&gt tag.
+
+                        By default, the text in &ltth&gt elements are bold and centered.
+
+                        By default, the text in &lttd&gt elements are regular and left-aligned.</p>
+                    <br>
+                    <h3>Code sample</h3> <br>
+
+                    &lttable style="width:100%"&gt <br>
+                    &lttr&gt<br>
+                    &ltth&gtFirstname&lt/th&gt<br>
+                    &ltth&gtLastname&lt/th&gt<br>
+                    &ltth&gtAge&lt/th&gt<br>
+                    &lt/tr&gt<br>
+                    &lttr&gt<br>
+                    &lttd&gtJill&lt/td&gt<br>
+                    &lttd&gtSmith&lt/td&gt<br>
+                    &lttd&gt50&lt/td&gt<br>
+                    &lt/tr&gt<br>
+                    &lttr&gt<br>
+                    &lttd&gtEve&lt/td&gt<br>
+                    &lttd&gtJackson&lt/td&gt<br>
+                    &lttd&gt94&lt/td&gt<br>
+                    &lt/tr&gt<br>
+                    &lt/table&gt <br>
+
+                    <br>
+                    <h4>OUTPUT</h4>
+                    <br>
+
+                    <table style="width:100%">
+                        <tr>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Age</th>
+                        </tr>
+                        <tr>
+                            <td>Jill</td>
+                            <td>Smith</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>Eve</td>
+                            <td>Jackson</td>
+                            <td>94</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="boxes">
+            <div class="container">
+           <span><a id="links" href="module.html">Go Back</a>
+            <a id="links" href="../quiz/assign.html">QUIZ</a></span>
+        </div>
+    </div>
+</body>
+
+</html>
